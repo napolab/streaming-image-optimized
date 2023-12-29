@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "lint": "biome lint src",
+    "fmt": "biome format src --write",
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^3.11.11",
+    "wasm-image-optimization": "^0.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.22.0"
+  }
+}
